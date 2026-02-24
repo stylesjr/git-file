@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  width: 100%;
+  height: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.logo h1 {
+  color: #333;
+  font-size: 24px;
+}
+.logo h1 span {
+  color: #b82b00;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 18px;
+  font-size: 18px;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #b82b00;
+}
+
+.icons i{
+    color: #333;
+    font-size: 18px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.hero{
+    width: 100%;
+    height:90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,0.5)),url("/images/BgImage1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.main{
+    text-align: center;
+}
+.main h3{
+    font-family: "Dancing Script", cursive;;
+    font-size: 3.5rem;
+    margin: 0;
+}
+.main h2{
+    font-size: 4rem;
+    font-weight: 600;
+    margin: 0;
+}
+.main h1{
+    font-size: 4rem;
+    font-weight: 600;
+    color: #cb8203;
+    margin: 0;
+}
+
+.main button{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.about-text{
+    text-align: center;
+    padding: 40px 100px;
+    text-transform: uppercase;
+}
+
+.about-text h2{
+    font-size: 2.5rem;
+    color: #cb8203;
+    margin-bottom: 10px;
+}
+
+.about-text h1{
+    font-family: "Dancing Script", cursive;;
+}
+
+.about-menu{
+    display:flex;
+    align-items: center;
+    padding: 0 100px;
+    gap: 30px;
+}
+
+.image-holder{
+    height: 200px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 18px;
+}
+.image-holder img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photos-wrappers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+.photo-holder{
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.photo-holder::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.612);
+    width: 100%;
+    height: 100%; 
+}
+
+.photo-holder img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-container{
+    position: relative;
+}
+.photo-container h3{
+    display: none;
+}
+
+.photo-container,.photo-container:hover h3{
+    display: block;
+}
+
+.photo-container h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
